@@ -1,0 +1,79 @@
+.card {
+    background-color: snow;
+}
+
+#portfolios .card:hover {
+    cursor: pointer;
+}
+
+#banner img {
+    width: 100%;
+}
+
+.inner {
+    height: 100px;
+}
+
+.inner-50 {
+    height: 50px;
+}
+
+/* rating */
+
+.rating span::before {
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+}
+
+.rating.rating-one span:nth-child(1)::before, .rating.rating-two span:nth-child(1)::before, .rating.rating-three span:nth-child(1)::before, .rating.rating-four span:nth-child(1)::before, .rating.rating-five span:nth-child(1)::before, .rating.rating-two span:nth-child(2)::before, .rating.rating-three span:nth-child(2)::before, .rating.rating-four span:nth-child(2)::before, .rating.rating-five span:nth-child(2)::before, .rating.rating-three span:nth-child(3)::before, .rating.rating-four span:nth-child(3)::before, .rating.rating-five span:nth-child(3)::before, .rating.rating-four span:nth-child(4)::before, .rating.rating-five span:nth-child(4)::before, .rating.rating-five span:nth-child(5)::before {
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.h-image {
+    background-image: url('img/header.jpg');
+    height: 65vh;
+}
+
+.modal {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.modal__bg {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+
+.modal__content {
+    background: #fff;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+
+@media (max-width: 575px) {
+    .fixed-top-sm {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030
+    }
+}
+
+@media (min-width: 1322px) {
+    .h-image {
+        background-size: 100%;
+    }
+}
