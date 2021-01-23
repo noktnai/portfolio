@@ -1,5 +1,18 @@
-.card {
-    background-color: snow;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
+    color: #424242;
+    background-image: url(img/graf1.gif);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+#skills, #contact {
+    background: rgba(248, 249, 250, 0.5);
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #portfolios .card:hover {

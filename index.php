@@ -25,7 +25,7 @@
 
 <body>
     <header>
-        <div class="p-5 text-center h-image">
+        <div class="p-5 h-image">
             <div class="d-flex justify-content-center align-items-center h-100 text-white">
                 <h1 class="mb-3">Naoki Tani's portfolio</h1>
             </div>
@@ -55,22 +55,18 @@
     <main>
         <div class="container">
             <section id="profile">
-                <div class="inner"></div>
-                <div class="text-center">
-                    <h1>- Profile -</h1>
-                    <p>
-                        はじめまして。滋賀県在住、21歳 専門学生です。<br>このサイトでは自分のスキルや作成したアプリケーションなどの紹介をしています。
-                    </p>
-                </div>
+                <h1 class="text-center">- Profile -</h1>
+                <h5 class="text-center">
+                    はじめまして。滋賀県在住、21歳 専門学生です。<br>このサイトでは自分のスキルや作成したアプリケーションなどの紹介をしています。
+                </h5>
             </section>
 
             <section id="skills">
-                <div class="inner"></div>
                 <div class="text-center">
                     <h1>- Skills -</h1>
                     <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card m-3">
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="card mb-3">
                                 <div class="inner-50"></div>
                                 <h3 class="card-title">フロントエンド</h3>
                                 <div class="card-body">
@@ -104,8 +100,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="card m-3">
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="card mb-3">
                                 <div class="inner-50"></div>
                                 <h3 class="card-title">バックエンド</h3>
                                 <div class="card-body">
@@ -139,8 +135,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="card m-3">
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="card mb-3">
                                 <div class="inner-50"></div>
                                 <h3 class="card-title">その他</h3>
                                 <div class="card-body">
@@ -179,12 +175,11 @@
             </section>
 
             <section id="portfolios">
-                <div class="inner"></div>
                 <div class="text-center">
                     <h1>- Portfolios -</h1>
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
-                            <div class="card m-3">
+                            <div class="card mb-3">
                                 <img src="assets/img/portfolio01.jpg" alt="ポートフォリオ" class="card-img-top">
                                 <div class="card-body">
                                     <h5 class="card-title">Portfolio</h5>
@@ -193,7 +188,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="card m-3">
+                            <div class="card mb-3">
                                 <img src="assets/img/portfolio02.jpg" alt="ポートフォリオ" class="card-img-top">
                                 <div class="card-body">
                                     <h5 class="card-title">落とし物検索システム</h5>
@@ -202,7 +197,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="card m-3">
+                            <div class="card mb-3">
                                 <img src="assets/img/portfolio03.jpg" alt="ポートフォリオ" class="card-img-top">
                                 <div class="card-body">
                                     <h5 class="card-title">給与計算</h5>
@@ -222,9 +217,20 @@
             </div>
 
             <section id="contact">
-                <div class="inner"></div>
-                <div class="text-center">
-                    <h1>- Contact -</h1>
+                <h1 class="text-center">- Contact -</h1>
+                <div class="mx-3">
+                    <div class="form-group">
+                        <label class="text-muted">お名前</label>
+                        <input type="text" name="name" class="form-control" size="25" maxlength="100" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="text-muted">メールアドレス</label>
+                        <input type="mail" name="name" class="form-control" size="25" maxlength="100" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="text-muted">本文</label>
+                        <textarea name="details" class="form-control" rows="4" cols="60"></textarea>
+                    </div>
                 </div>
             </section>
         </div>
