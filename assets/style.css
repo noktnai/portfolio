@@ -1,13 +1,20 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
-    color: #424242;
+/*
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;  
     background-image: url(img/graf1.gif);
     background-repeat: repeat;
     background-attachment: fixed;
 }
 
-#skills, #contact {
-    background: rgba(248, 249, 250, 0.5);
+body {
+    background: rgba(0, 0, 0, 0);
+}*/
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;  
+    background-image: url(img/graf1.gif);
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 section {
@@ -25,10 +32,6 @@ section {
 
 .inner {
     height: 100px;
-}
-
-.inner-50 {
-    height: 50px;
 }
 
 /* rating */
@@ -68,13 +71,12 @@ section {
 .modal__content {
     background: #fff;
     left: 50%;
-    padding: 40px;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
+    width: 90%;
 }
-
+/**/
 @media (max-width: 575px) {
     .fixed-top-sm {
         position: fixed;
@@ -89,4 +91,13 @@ section {
     .h-image {
         background-size: 100%;
     }
+}
+
+.form-control,.form-control:focus {
+    background-color:transparent;
+}
+
+
+.form-group {
+    max-width: 560px;
 }

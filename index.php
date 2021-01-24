@@ -65,10 +65,9 @@
                 <div class="text-center">
                     <h1>- Skills -</h1>
                     <div class="row">
-                        <div class="col-lg-6 col-xl-4">
-                            <div class="card mb-3">
-                                <div class="inner-50"></div>
-                                <h3 class="card-title">フロントエンド</h3>
+                        <div class="col-lg-6">
+                            <div class="card my-3 py-3">
+                                <h3 class="card-title my-3">フロントエンド</h3>
                                 <div class="card-body">
                                     <p class="card-text">基本的な事は一通りできます。最近、デザインはBootstrapに頼っています。</p>
                                     <table class="table table-borderless">
@@ -100,10 +99,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-xl-4">
-                            <div class="card mb-3">
-                                <div class="inner-50"></div>
-                                <h3 class="card-title">バックエンド</h3>
+                        <div class="col-lg-6">
+                            <div class="card my-3 py-3">
+                                <h3 class="card-title my-3">バックエンド</h3>
                                 <div class="card-body">
                                     <p class="card-text">主にPHPです。</p>
                                     <table class="table table-borderless">
@@ -135,10 +133,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-xl-4">
-                            <div class="card mb-3">
-                                <div class="inner-50"></div>
-                                <h3 class="card-title">その他</h3>
+                        <div class="col-lg-6">
+                            <div class="card my-3 py-3">
+                                <h3 class="card-title my-3">その他</h3>
                                 <div class="card-body">
                                     <p class="card-text">学校の授業で取り扱ったもの等です。</p>
                                     <table class="table table-borderless">
@@ -210,26 +207,26 @@
             </section>
             <div class="modal js-modal">
                 <div class="modal__bg js-modal-close"></div>
-                <div class="modal__content">
+                <div class="modal__content p-3">
                     <p>ここにモーダルウィンドウで表示したいコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。</p>
-                    <a class="js-modal-close" href="">閉じる</a>
+                    
                 </div>
             </div>
 
             <section id="contact">
                 <h1 class="text-center">- Contact -</h1>
                 <div class="mx-3">
-                    <div class="form-group">
-                        <label class="text-muted">お名前</label>
-                        <input type="text" name="name" class="form-control" size="25" maxlength="100" required>
+                    <div class="form-group mx-auto">
+                        <label>お名前</label>
+                        <input type="text" name="name" class="form-control border border-dark" size="25" maxlength="100" required>
                     </div>
-                    <div class="form-group">
-                        <label class="text-muted">メールアドレス</label>
-                        <input type="mail" name="name" class="form-control" size="25" maxlength="100" required>
+                    <div class="form-group form-group mx-auto">
+                        <label>メールアドレス</label>
+                        <input type="mail" name="name" class="form-control border border-dark" size="25" maxlength="100" required>
                     </div>
-                    <div class="form-group">
-                        <label class="text-muted">本文</label>
-                        <textarea name="details" class="form-control" rows="4" cols="60"></textarea>
+                    <div class="form-group form-group mx-auto">
+                        <label>本文</label>
+                        <textarea name="details" class="form-control border border-dark" rows="4" cols="60"></textarea>
                     </div>
                 </div>
             </section>
