@@ -209,25 +209,28 @@
                 <div class="modal__bg js-modal-close"></div>
                 <div class="modal__content p-3">
                     <p>ここにモーダルウィンドウで表示したいコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。</p>
-                    
                 </div>
             </div>
 
             <section id="contact">
                 <h1 class="text-center">- Contact -</h1>
-                <div class="mx-3">
-                    <div class="form-group mx-auto">
-                        <label>お名前</label>
-                        <input type="text" name="name" class="form-control border border-dark" size="25" maxlength="100" required>
-                    </div>
-                    <div class="form-group form-group mx-auto">
-                        <label>メールアドレス</label>
-                        <input type="mail" name="name" class="form-control border border-dark" size="25" maxlength="100" required>
-                    </div>
-                    <div class="form-group form-group mx-auto">
-                        <label>本文</label>
-                        <textarea name="details" class="form-control border border-dark" rows="4" cols="60"></textarea>
-                    </div>
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="form-group mx-auto">
+                    <label>お名前</label>
+                    <input type="text" name="name" class="form-control border border-dark" size="25" maxlength="100" required>
+                </div>
+                <div class="form-group mx-auto">
+                    <label>メールアドレス</label>
+                    <input type="mail" name="name" class="form-control border border-dark" size="25" maxlength="100" required>
+                </div>
+                <div class="form-group mx-auto">
+                    <label>本文</label>
+                    <textarea name="details" class="form-control border border-dark" rows="4" cols="60"></textarea>
+                </div>
+                <div class="form-group mx-auto text-center">
+                    <input type="submit" class="btn btn-outline-dark">
                 </div>
             </section>
         </div>
@@ -235,13 +238,16 @@
     <footer class="bg-dark">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link text-white" href="https://github.com/naotoge5"><i class="fab fa-github fa-fw"></i>Github</a>
+                <a class="nav-link text-white" href="https://github.com/naotoge5"><i class="fab fa-github fa-fw"></i> Github</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white" href="https://qiita.com/naotoge5"><i class="fas fa-search fa-fw"></i>Qiita</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="https://twitter.com/naotoge5"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+                <a class="nav-link text-white" href="https://twitter.com/naotoge5"><i class="fab fa-twitter fa-fw"></i> Twitter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="https://note.com/naotoge5"><i class="far fa-sticky-note"></i></i> Note</a>
             </li>
         </ul>
         <div class="inner"></div>

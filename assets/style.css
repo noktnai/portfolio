@@ -11,7 +11,7 @@ body {
 }*/
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;  
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
     background-image: url(img/graf1.gif);
     background-repeat: repeat;
     background-attachment: fixed;
@@ -75,8 +75,11 @@ section {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
+    height: 50%;
 }
+
 /**/
+
 @media (max-width: 575px) {
     .fixed-top-sm {
         position: fixed;
@@ -93,11 +96,20 @@ section {
     }
 }
 
-.form-control,.form-control:focus {
-    background-color:transparent;
+.form-control, .form-control:focus {
+    background-color: transparent;
 }
-
 
 .form-group {
     max-width: 560px;
+}
+
+.fa-sticky-note {
+    transform: rotateX( 180deg);
+}
+
+.spinner-border {
+    position: fixed;
+    left: 144px;
+    top: 50%;
 }
