@@ -44,7 +44,7 @@
                     <a class="nav-link" href="#skills"><i class="fas fa-pen fa-fw"></i>Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolios"><i class="fa fa-archive fa-fw"></i>Portfolios</a>
+                    <a class="nav-link" href="#works"><i class="fa fa-archive fa-fw"></i>Works</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact"><i class="fa fa-envelope fa-fw"></i>Contact</a>
@@ -167,13 +167,39 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-6">
+                            <div class="card my-3 py-3">
+                                <h3 class="card-title my-3">資格等</h3>
+                                <div class="card-body">
+                                    <p class="card-text">勉強中です。</p>
+                                    <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th>技術</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <th>Coming Soon...</th>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section id="portfolios">
+            <section id="works">
                 <div class="text-center">
-                    <h1>- Portfolios -</h1>
+                    <h1>- Works -</h1>
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                             <div class="card mb-3">
@@ -214,23 +240,21 @@
 
             <section id="contact">
                 <h1 class="text-center">- Contact -</h1>
-                <div class="spinner-border" role="status">
-                    <span class="sr-only">Loading...</span>
-                </div>
+                <p id="message" class="text-center text-danger"></p>
                 <div class="form-group mx-auto">
                     <label>お名前</label>
-                    <input type="text" name="name" class="form-control border border-dark" size="25" maxlength="100" required>
+                    <input type="text" name="name" class="form-control border border-dark" required>
                 </div>
                 <div class="form-group mx-auto">
                     <label>メールアドレス</label>
-                    <input type="mail" name="name" class="form-control border border-dark" size="25" maxlength="100" required>
+                    <input type="mail" name="mail" class="form-control border border-dark" required>
                 </div>
                 <div class="form-group mx-auto">
                     <label>本文</label>
-                    <textarea name="details" class="form-control border border-dark" rows="4" cols="60"></textarea>
+                    <textarea name="body" class="form-control border border-dark" rows="4" cols="60"></textarea>
                 </div>
                 <div class="form-group mx-auto text-center">
-                    <input type="submit" class="btn btn-outline-dark">
+                    <input type="submit" name="jkl" class="btn btn-outline-dark">
                 </div>
             </section>
         </div>
