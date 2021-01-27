@@ -248,6 +248,7 @@
                 <div class="form-group mx-auto">
                     <label>メールアドレス</label>
                     <input type="mail" name="mail" class="form-control border border-dark" required>
+                    <small class="text-muted">こちらのメールアドレスに返信させていただきます。</small>
                 </div>
                 <div class="form-group mx-auto">
                     <label>本文</label>

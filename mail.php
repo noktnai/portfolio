@@ -12,7 +12,9 @@ $mail = $_POST['mail'];
 $body = $_POST['body'];
 
 if (send_mail()) {
+    echo 1;
 } else {
+    echo 0;
 }
 
 function send_mail()

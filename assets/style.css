@@ -11,7 +11,6 @@ body {
 }*/
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
     background-image: url(img/graf1.gif);
     background-repeat: repeat;
     background-attachment: fixed;
@@ -106,10 +105,4 @@ section {
 
 .fa-sticky-note {
     transform: rotateX( 180deg);
-}
-
-.spinner-border {
-    position: fixed;
-    left: 144px;
-    top: 50%;
 }

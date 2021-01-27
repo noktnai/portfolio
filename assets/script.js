@@ -15,31 +15,40 @@ $(function () {
     });
 
     cardHeightAdjustment("#skills .card");
-    cardHeightAdjustment("#portfolios .card-text");
+    cardHeightAdjustment("#works .card-text");
 
     $("input[type=submit]").click(function () {
+        $("#message").text('');
         let name = $("input[name=name]").val();
         let mail = $("[name=mail]").val();
         let body = $("textarea[name=body]").val();
         if (name.match(/\S/g) && mail.match(/\S/g) && body.match(/\S/g)) {
-            $("#message").text('');
+            let screenWidth = $(window).width();
+            let point = (screenWidth - 32) / 2;
+            $("body").append('<div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div>');
+            $(".spinner-border").css({
+                left: point,
+                position: "fixed",
+                top: "50%"
+            });
             $.ajax({
                 type: "POST",
                 url: "mail.php",
                 data: { name: name, mail: mail, body: body }
-            }).done(function (response) {//ajax通信に成功したかどうかresponseに値があるかどうかでは無い
-                $("#message").text('ご連絡ありがとうございます。メールを受け付けました');
+            }).done(function (response) {
+                let result = JSON.parse(response);
+                if (result) {
+                    $("#message").text('ご連絡ありがとうございます。メールを受け付けました');
+                    $('.spinner-border').remove();
+                } else {
+                    $("#message").text('もう一度お試し下さい');
+                }
             }).fail(function () {
-                
-            }).fail(function () {
-                alert('自動入力に失敗しました。');
+                $("#message").text('申し訳ございません、もう一度お試し下さい');
             });
         } else {
             $("#message").text('全ての項目を入力してください');
         }
-        /*
-        let postal = $('input[name="postal"]').val().replace('-', '');
-        */
     });
 });
 
