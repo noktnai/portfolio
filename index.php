@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--nobanner-->
 <html>
 
 <head>
@@ -277,19 +276,6 @@
         </ul>
         <div class="inner"></div>
     </footer>
-    <div class="row fixed-bottom">
-        <div class="d-none d-sm-block col-sm-3">&nbsp;</div>
-        <div class="col-12 col-sm-6">
-            <div id="banner" class="m-2">
-                <script type="text/javascript" src="https://cache1.value-domain.com/xa.j?site=naotoge5.s205.xrea.com"></script>
-            </div>
-        </div>
-        <div class="d-none d-sm-block col-sm-3">&nbsp;</div>
-    </div>
 </body>
 
 </html>
-<!--<i class="fa fa-user fa-fw"></i>-->
-<!--<i class="fas fa-pen fa-fw"></i>-->
-<!--<i class="fa fa-archive fa-fw"></i>-->
-<!--<i class="fa fa-envelope fa-fw"></i>-->
