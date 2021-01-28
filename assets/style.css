@@ -73,8 +73,6 @@ section {
     height: 50%;
 }
 
-/**/
-
 @media (max-width: 575px) {
     .fixed-top-sm {
         position: fixed;
