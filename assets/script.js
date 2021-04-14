@@ -42,6 +42,7 @@ $(function () {
                     $('.spinner-border').remove();
                 } else {
                     $("#message").text('もう一度お試し下さい');
+                    $('.spinner-border').remove();
                 }
             }).fail(function () {
                 $("#message").text('申し訳ございません、もう一度お試し下さい');
