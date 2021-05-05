@@ -33,7 +33,7 @@ $(function () {
             });
             $.ajax({
                 type: "POST",
-                url: "mail.php",
+                url: "assets/contact/mail.php",
                 data: { name: name, mail: mail, body: body }
             }).done(function (response) {
                 let result = JSON.parse(response);
