@@ -4,13 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="naotoge5のポートフォリオでは自分のスキルや作成したアプリケーションなどの紹介をしています。">
-    <meta name="keywords" content="naotoge5,ポートフォリオ">
-    <meta property='og:type' content='website'>
     <meta property='og:title' content='naotoge5 ポートフォリオ'>
-    <meta property='og:url' content='URL入る'>
-    <meta property='og:description' content='naotoge5のポートフォリオ'>
-    <meta property="og:image" content="assets/img/portfolio01.jpg">
     <meta name="google-site-verification" content="iZuOw3p_fzFYgk-BoFBsSFkYFoVecvVmeJTmNYVOydM" />
     
     <title>naotoge5 - portfolio</title>
