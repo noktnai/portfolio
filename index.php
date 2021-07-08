@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta property='og:title' content='naotoge5 ポートフォリオ'>
     <meta name="google-site-verification" content="iZuOw3p_fzFYgk-BoFBsSFkYFoVecvVmeJTmNYVOydM" />
-    
+
     <title>naotoge5 - portfolio</title>
     <!-- style -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -16,6 +16,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="assets/script.js"></script>
+    <!-- icons -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png">
 </head>
 
 <body>
