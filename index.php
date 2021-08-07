@@ -179,13 +179,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th></th>
-                                            </tr>
-                                            <tr>
-                                                <th>Coming Soon...</th>
-                                            </tr>
-                                            <tr>
-                                                <th></th>
+                                                <th>ITパスポート試験</th>
                                             </tr>
                                         </tbody>
                                     </table>

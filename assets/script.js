@@ -1,7 +1,7 @@
 $(function () {
     $(".rating").append('<span></span><span></span><span></span><span></span><span></span>');
 
-    $('#portfolios .card').on('click', function () {
+    $('#works .card').on('click', function () {
         $('.js-modal').fadeIn();
         return false;
     });
@@ -42,7 +42,6 @@ $(function () {
                     $('.spinner-border').remove();
                 } else {
                     $("#message").text('もう一度お試し下さい');
-                    $('.spinner-border').remove();
                 }
             }).fail(function () {
                 $("#message").text('申し訳ございません、もう一度お試し下さい');
