@@ -1,36 +1,9 @@
 $(function () {
-    $(".rating").append('<span></span><span></span><span></span><span></span><span></span>');
-
-    $('#works .card').on('click', function () {
-        $('.js-modal').fadeIn();
-        return false;
-    });
-
-    $('.modal__bg').on('click', function () {
-        $('.js-modal').fadeOut();
-    });
-
-    $(".nav-link").on('click', function () {
-        $('.navbar-collapse').collapse('hide');
-    });
-
-    cardHeightAdjustment("#skills .card");
-    cardHeightAdjustment("#works .card-text");
-
     $("input[type=submit]").click(function () {
-        $("#message").text('');
         let name = $("input[name=name]").val();
         let mail = $("[name=mail]").val();
         let body = $("textarea[name=body]").val();
         if (name.match(/\S/g) && mail.match(/\S/g) && body.match(/\S/g)) {
-            let screenWidth = $(window).width();
-            let point = (screenWidth - 32) / 2;
-            $("body").append('<div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div>');
-            $(".spinner-border").css({
-                left: point,
-                position: "fixed",
-                top: "50%"
-            });
             $.ajax({
                 type: "POST",
                 url: "assets/contact/mail.php",
@@ -39,7 +12,6 @@ $(function () {
                 let result = JSON.parse(response);
                 if (result) {
                     $("#message").text('ご連絡ありがとうございます。メールを受け付けました');
-                    $('.spinner-border').remove();
                 } else {
                     $("#message").text('もう一度お試し下さい');
                 }
@@ -50,18 +22,23 @@ $(function () {
             $("#message").text('全ての項目を入力してください');
         }
     });
-});
 
-function cardHeightAdjustment(tagName) {
-    var minHeight = 0;
 
-    $(tagName).each(function () {
-        if ($(this).height() > minHeight) minHeight = $(this).height();
+    //ページ内スクロール
+    var navHeight = $("header").outerHeight();
+
+    $('a[href^="#"]').on("click", function () {
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? "html" : href);
+        var position = target.offset().top - navHeight;
+        $("html, body").animate({ scrollTop: position, }, 300, "swing");
+        return false;
     });
-    $(tagName).height(minHeight);
-}
-/*
-function
-<div class="spinner-border" role="status">
-    <span class="sr-only">Loading...</span>
-</div>*/
+
+    //ページトップ
+    $(".js_top").on("click", function () {
+        $("body,html").animate({ scrollTop: 0, }, 300);
+        return false;
+    });
+
+});

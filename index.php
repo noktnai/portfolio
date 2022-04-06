@@ -1,274 +1,212 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta property='og:title' content='naotoge5 ポートフォリオ'>
-    <meta name="google-site-verification" content="iZuOw3p_fzFYgk-BoFBsSFkYFoVecvVmeJTmNYVOydM" />
-
-    <title>naotoge5 - portfolio</title>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="谷直輝のポートフォリオサイトです" />
+    <!-- OGP -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NAOKI TANI ポートフォリオ" />
+    <meta property="og:url" content="https://naokitani.tk" />
+    <meta property="og:description" content="谷直輝のポートフォリオサイトです" />
     <!-- style -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="assets/style.css" />
     <!-- script -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
     <!-- icons -->
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="android-chrome-192x192.png">
+
+    <title>NAOKI TANI PORTFOLIO</title>
 </head>
 
 <body>
     <header>
-        <div class="p-5 h-image">
-            <div class="d-flex justify-content-center align-items-center h-100 text-white">
-                <h1 class="mb-3">Naoki Tani's portfolio</h1>
-            </div>
+        <div class="container">
+            <h1 class="header-logo">
+                <a href="">NAOKI TANI</a>
+            </h1>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#works">WORKS</a></li>
+                    <li class="nav-item"><a href="#skill">SKILL</a></li>
+                    <li class="nav-item"><a href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <nav class="navbar navbar-expand-sm bg-light sticky-top fixed-top-sm">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#profile"><i class="fa fa-user fa-fw"></i>Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills"><i class="fas fa-pen fa-fw"></i>Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#works"><i class="fa fa-archive fa-fw"></i>Works</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact"><i class="fa fa-envelope fa-fw"></i>Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
     <main>
-        <div class="container">
-            <section id="profile">
-                <h1 class="text-center">- Profile -</h1>
-                <h5 class="text-center">
-                    はじめまして。滋賀県在住、21歳 専門学生です。<br>このサイトでは自分のスキルや作成したアプリケーションなどの紹介をしています。
-                </h5>
-            </section>
-
-            <section id="skills">
-                <div class="text-center">
-                    <h1>- Skills -</h1>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card my-3 py-3">
-                                <h3 class="card-title my-3">フロントエンド</h3>
-                                <div class="card-body">
-                                    <p class="card-text">基本的な事は一通りできます。最近、デザインはBootstrapに頼っています。</p>
-                                    <table class="table table-borderless">
-                                        <thead>
-                                            <tr>
-                                                <th>技術</th>
-                                                <th class="d-none d-sm-block">経験年数</th>
-                                                <th>スキル</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th>HTML5</th>
-                                                <td class="d-none d-sm-block">2年</td>
-                                                <td><span class="rating rating-four"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <th>CSS</th>
-                                                <td class="d-none d-sm-block">2年</td>
-                                                <td><span class="rating rating-two"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <th>javascrpt・jQuery</th>
-                                                <td class="d-none d-sm-block">2年</td>
-                                                <td class="align-middle"><span class="rating rating-three"></span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+        <div class="fv">
+            <div>
+                <p class="fv-title">NAOKI TANI</p>
+                <p class="fv-subtitle">PORTFOLIO</p>
+                <p class="fv-text">谷 直輝のポートフォリオサイト</p>
+            </div>
+        </div>
+        <section id="works">
+            <div class="container">
+                <h2 class="title">WORKS</h2>
+                <div class="works-list">
+                    <a class="works-item" href="worksample1.html">
+                        <div class="works-img">
+                            <img src="img/work1.jpg" alt="作品1" />
                         </div>
-                        <div class="col-lg-6">
-                            <div class="card my-3 py-3">
-                                <h3 class="card-title my-3">バックエンド</h3>
-                                <div class="card-body">
-                                    <p class="card-text">主にPHPです。</p>
-                                    <table class="table table-borderless">
-                                        <thead>
-                                            <tr>
-                                                <th>技術</th>
-                                                <th class="d-none d-sm-block">経験年数</th>
-                                                <th>スキル</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th>PHP</th>
-                                                <td class="d-none d-sm-block">2年</td>
-                                                <td><span class="rating rating-three"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <th>Ruby on Rails</th>
-                                                <td class="d-none d-sm-block">半月</td>
-                                                <td class="align-middle"><span class="rating rating-one"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <th>MySQL</th>
-                                                <td class="d-none d-sm-block">2年</td>
-                                                <td><span class="rating rating-three"></span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                        <p class="works-name">My Gallery</p>
+                        <p class="works-info">Coding(Responsive)</p>
+                    </a>
+                    <a class="works-item" href="worksample2.html">
+                        <div class="works-img">
+                            <img src="img/work2.jpg" alt="作品2" />
                         </div>
-                        <div class="col-lg-6">
-                            <div class="card my-3 py-3">
-                                <h3 class="card-title my-3">その他</h3>
-                                <div class="card-body">
-                                    <p class="card-text">学校の授業で取り扱ったもの等です。</p>
-                                    <table class="table table-borderless">
-                                        <thead>
-                                            <tr>
-                                                <th>技術</th>
-                                                <th class="d-none d-sm-block">経験年数</th>
-                                                <th>スキル</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th>Git・Github</th>
-                                                <td class="d-none d-sm-block">2年</td>
-                                                <td class="align-middle"><span class="rating rating-four"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <th>Java</th>
-                                                <td class="d-none d-sm-block">2年</td>
-                                                <td><span class="rating rating-two"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <th>Swift</th>
-                                                <td class="d-none d-sm-block">1年</td>
-                                                <td><span class="rating rating-one"></span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                        <p class="works-name">ABCパソコン教室</p>
+                        <p class="works-info">
+                            Coding(Responsive)
+                        </p>
+                    </a>
+                    <a class="works-item" href="worksample3.html">
+                        <div class="works-img">
+                            <img src="img/work3.jpg" alt="作品3" />
                         </div>
-                        <div class="col-lg-6">
-                            <div class="card my-3 py-3">
-                                <h3 class="card-title my-3">資格等</h3>
-                                <div class="card-body">
-                                    <p class="card-text">勉強中です。</p>
-                                    <table class="table table-borderless">
-                                        <thead>
-                                            <tr>
-                                                <th>技術</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th>ITパスポート試験</th>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                        <p class="works-name">はじめてのNintendo Switch</p>
+                        <p class="works-info">Design / Coding </p>
+                    </a>
+                    <a class="works-item" href="worksample4.html">
+                        <div class="works-img">
+                            <img src="img/work4.jpg" alt="作品4" />
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="works">
-                <div class="text-center">
-                    <h1>- Works -</h1>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="card mb-3">
-                                <img src="assets/img/portfolio01.jpg" alt="ポートフォリオ" class="card-img-top">
-                                <div class="card-body">
-                                    <h5 class="card-title">Portfolio</h5>
-                                    <p class="card-text">自分自身のポートフォリオです。</p>
-                                </div>
-                            </div>
+                        <p class="works-name">Spotem お店情報アプリ</p>
+                        <p class="works-info">Design / Coding</p>
+                    </a>
+                    <a class="works-item" href="worksample5.html">
+                        <div class="works-img">
+                            <img src="img/work5.jpg" alt="作品5" />
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="card mb-3">
-                                <img src="assets/img/portfolio02.jpg" alt="ポートフォリオ" class="card-img-top">
-                                <div class="card-body">
-                                    <h5 class="card-title">落とし物検索システム</h5>
-                                    <p class="card-text">5人でチームを組んで作成しました。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="card mb-3">
-                                <img src="assets/img/portfolio03.jpg" alt="ポートフォリオ" class="card-img-top">
-                                <div class="card-body">
-                                    <h5 class="card-title">給与計算</h5>
-                                    <p class="card-text">日々の給与を計算するアプリケーションです。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="modal js-modal">
-                <div class="modal__bg js-modal-close"></div>
-                <div class="modal__content p-3">
-                    <p>ここにモーダルウィンドウで表示したいコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。</p>
+                        <p class="works-name">ゲーム広告バナー</p>
+                        <p class="works-info">Banner Design</p>
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <section id="contact">
-                <h1 class="text-center">- Contact -</h1>
-                <p id="message" class="text-center text-danger"></p>
-                <div class="form-group mx-auto">
-                    <label>お名前</label>
-                    <input type="text" name="name" class="form-control border border-dark" required>
+        <!-- skill -->
+        <section id="skill">
+            <div class="container">
+                <h2 class="title">SKILL</h2>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <i class="devicon-html5-plain-wordmark colored skill-img"></i>
+                        <div class="skill-body">
+                            <h3 class="skill-name">HTML5</h3>
+                            <p class="skill-text">
+                                基本的なコードの記述が可能です。SEO対策にも力を入れています。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-css3-plain-wordmark colored skill-img"></i>
+                        <div class="skill-body">
+                            <h3 class="skill-name">CSS3</h3>
+                            <p class="skill-text">
+                                基本的なコードの記述が可能です。アニメーション, レスポンシブにも対応可。フレームワークにTailwindCSS, BootStrapを利用したことがあります。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-javascript-plain colored skill-img"></i>
+                        <div class="skill-body">
+                            <h3 class="skill-name">JavaScript</h3>
+                            <p class="skill-text">
+                                関数を使用したコードの記述、jQueryの利用が可能です。ajaxを使った非同期処理もできます。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-php-plain colored skill-img"></i>
+                        <div class="skill-body">
+                            <h3 class="skill-name">PHP</h3>
+                            <p class="skill-text">
+                                基本的なコードの記述、データベースとの接続が可能です。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-java-plain-wordmark colored skill-img"></i>
+                        <div class="skill-body">
+                            <h3 class="skill-name">Java</h3>
+                            <p class="skill-text">
+                                基本的なコードの記述ができます。サーバーサイド（JSP）についても学習しました。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-mysql-plain-wordmark colored skill-img"></i>
+                        <div class="skill-body">
+                            <h3 class="skill-name">MySQL</h3>
+                            <p class="skill-text">
+                                データベース、テーブル等の作成ができます。PostgreSQL, SQLiteも利用します。
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group mx-auto">
-                    <label>メールアドレス</label>
-                    <input type="mail" name="mail" class="form-control border border-dark" required>
-                    <small class="text-muted">こちらのメールアドレスに返信させていただきます。</small>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h2 class="title">ABOUT</h2>
+                <div class="profile">
+                    <p class="profile-img">
+                        <img src="img/profile.jpg" alt="プロフィール画像" />
+                    </p>
+                    <div class="profile-body">
+                        <h3>谷 直輝</h3>
+                        <p>
+                            京都コンピュータ学院京都駅前校 情報科学科在学。<br>
+                            滋賀県出身。
+                        </p>
+                        <p>
+                            Webサイト制作の授業の中で色々なデザインに触れ、自分でもサイトを作ってみたいと興味を持ち学習を始めた。<br>
+                            見た人がワクワクするようなWebサイトの企画、制作が目標。
+                        </p>
+                    </div>
                 </div>
-                <div class="form-group mx-auto">
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2 class="title">CONTACT</h2>
+                <p id="message" class="form-message">&nbsp;</p>
+                <div class="inline-form">
+                    <div class="form-item">
+                        <label>お名前</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-item">
+                        <label>メールアドレス</label>
+                        <input type="email" name="mail" required>
+                    </div>
+                </div>
+                <div class="form-item">
                     <label>本文</label>
-                    <textarea name="body" class="form-control border border-dark" rows="4" cols="60"></textarea>
+                    <textarea name="body" rows="3"></textarea>
                 </div>
-                <div class="form-group mx-auto text-center">
-                    <input type="submit" name="jkl" class="btn btn-outline-dark">
+                <div class="form-submit">
+                    <input type="submit">
                 </div>
-            </section>
+            </div>
+        </section>
+        <div class="page-top js_top">
+            <span class="material-icons-outlined">expand_less</span>
         </div>
     </main>
-    <footer class="bg-dark">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link text-white" href="https://github.com/naotoge5"><i class="fab fa-github fa-fw"></i> Github</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="https://qiita.com/naotoge5"><i class="fas fa-search fa-fw"></i>Qiita</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="https://twitter.com/naotoge5"><i class="fab fa-twitter fa-fw"></i> Twitter</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="https://note.com/naotoge5"><i class="far fa-sticky-note"></i></i> Note</a>
-            </li>
-        </ul>
-        <div class="inner"></div>
+
+    <footer>
+        <div class="copyright">&copy;&nbsp;2022 NAOKI TANI</div>
     </footer>
 </body>
 

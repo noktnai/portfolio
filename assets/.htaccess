@@ -1,4 +1,4 @@
-SetEnvIf Referer "^https://naotoge5\.tk" site
+SetEnvIf Referer "^https://naokitani\.tk" site
 order deny,allow
 deny from all
 allow from env=site
