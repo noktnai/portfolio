@@ -7,9 +7,10 @@
     <meta name="description" content="谷直輝のポートフォリオサイトです" />
     <!-- OGP -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="NAOKI TANI ポートフォリオ" />
+    <meta property="og:title" content="Naoki Tani's Portfolio" />
     <meta property="og:url" content="https://naokitani.tk" />
     <meta property="og:description" content="谷直輝のポートフォリオサイトです" />
+    <meta property="og:image" content="ogp.png" />
     <!-- style -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet" />
@@ -22,7 +23,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <title>NAOKI TANI PORTFOLIO</title>
+    <title>Naoki Tani's Portfolio</title>
 </head>
 
 <body>

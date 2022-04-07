@@ -149,7 +149,7 @@ header .container {
 
 .form-item input, .form-item textarea {
     font-size: 24px;
-    padding: 4px;
+    padding: 4px 0;
     border-bottom: solid 1.6px #4c4c4c;
     border-radius: 0;
     outline: none;
@@ -196,7 +196,6 @@ input:autofill {
 footer {
     background-color: #333;
     padding: 32px 0;
-    bottom: 0;
 }
 
 .copyright {
@@ -211,8 +210,8 @@ footer {
         padding-right: 24px;
     }
 
-    .section {
-        padding: 56px 0;
+    section {
+        padding: 48px 0;
     }
 
     .title {
