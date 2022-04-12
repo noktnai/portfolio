@@ -58,14 +58,14 @@
                         <div class="works-img">
                             <img src="img/work1.jpg" alt="作品1" />
                         </div>
-                        <p class="works-name">My Gallery</p>
+                        <p class="works-name">落とし物管理システム</p>
                         <p class="works-info">Coding(Responsive)</p>
                     </a>
                     <a class="works-item" href="worksample2.html">
                         <div class="works-img">
                             <img src="img/work2.jpg" alt="作品2" />
                         </div>
-                        <p class="works-name">ABCパソコン教室</p>
+                        <p class="works-name">Spotem（お店情報アプリ）</p>
                         <p class="works-info">
                             Coding(Responsive)
                         </p>
@@ -74,22 +74,15 @@
                         <div class="works-img">
                             <img src="img/work3.jpg" alt="作品3" />
                         </div>
-                        <p class="works-name">はじめてのNintendo Switch</p>
+                        <p class="works-name">Apple Watch紹介サイト</p>
                         <p class="works-info">Design / Coding </p>
                     </a>
                     <a class="works-item" href="worksample4.html">
                         <div class="works-img">
                             <img src="img/work4.jpg" alt="作品4" />
                         </div>
-                        <p class="works-name">Spotem お店情報アプリ</p>
+                        <p class="works-name">猫ランキング</p>
                         <p class="works-info">Design / Coding</p>
-                    </a>
-                    <a class="works-item" href="worksample5.html">
-                        <div class="works-img">
-                            <img src="img/work5.jpg" alt="作品5" />
-                        </div>
-                        <p class="works-name">ゲーム広告バナー</p>
-                        <p class="works-info">Banner Design</p>
                     </a>
                 </div>
             </div>
