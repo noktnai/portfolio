@@ -22,8 +22,6 @@ $(function () {
             $("#message").text('全ての項目を入力してください');
         }
     });
-
-
     //ページ内スクロール
     var navHeight = $("header").outerHeight();
 

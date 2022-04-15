@@ -1,29 +1,30 @@
-.container {
+.section-container, .header-container {
     max-width: 1152px;
     margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
-section {
-    padding: 80px 0;
+.section {
+    padding: 48px 0;
 }
 
-section:nth-of-type(odd) {
+.section:nth-of-type(odd) {
     background-color: #f7f7f7;
 }
 
-.title {
-    font-size: 32px;
+.section-title {
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
     letter-spacing: 0.05em;
     color: #333;
 }
 
 /* Header */
-header {
+
+.header {
     position: sticky;
     top: 0;
     z-index: 1;
@@ -32,17 +33,16 @@ header {
     box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
-header .container {
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
-
 .header-logo {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: 0.05em;
 }
@@ -52,19 +52,19 @@ header .container {
     text-decoration: none;
 }
 
-.nav-list {
+.header-nav {
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
 .nav-item:not(:last-child) {
-    margin-right: 24px;
+    margin-right: 12px;
 }
 
 .nav-item a {
     position: relative;
-    font-size: 16px;
+    font-size: 8px;
     font-weight: bold;
     display: inline-block;
     padding: 8px 0;
@@ -72,67 +72,109 @@ header .container {
     color: #333;
 }
 
+
 /* FirstView */
+
 .fv {
-    height: 100vh;
+    height: 96vh;
     background-image: url("img/fv.jpg");
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.fv-container {
+    color: darkgoldenrod;
     text-align: center;
 }
 
 .fv-title {
-    font-size: 56px;
+    font-size: 32px;
     font-weight: bold;
     letter-spacing: 0.1em;
-    color: darkgoldenrod;
 }
 
 .fv-subtitle {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
-    margin-bottom: 32px;
-    letter-spacing: 0.05em;
-    color: darkgoldenrod;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
 }
 
 .fv-text {
-    font-size: 16px;
-    color: darkgoldenrod;
+    font-size: 12px;
 }
 
-/* Skill */
-.skill-img {
-    font-size: 4em;
-}
-
-.skill-list {
+#works .section-body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.skill-item {
+#works .card {
+    width: 48%;
+    padding: 24px;
+}
+
+#works .card-img {
+    box-shadow: 0px 0px 8px -4px rgb(155, 130, 85);
+    border-radius: 4px;
+    width: 100%;
+}
+
+#works .card-img:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 8px 0px rgb(155, 130, 85);
+}
+
+#works .card-container {
+    padding: 16px 8px;
+}
+
+#works .card-title {
+    font-size: 16px
+}
+
+#works .card-body {
+    font-size: 12px;
+}
+
+#skill .section-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#skill .card {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    width: 48%;
+    width: 100%;
     margin-bottom: 40px;
 }
 
-.skill-body {
+#skill .card-img {
+    font-size: 3.2em;
+}
+
+#skill .card-container {
     padding-left: 16px;
     flex: 1;
 }
 
-.skill-text {
-    font-size: 16px;
+#skill .card-title {
+    font-size: 16px
+}
+
+#skill .card-body {
+    font-size: 12px;
 }
 
 /* Contact */
-.form-item, .form-message {
+
+.form-item,
+.form-message {
     padding: 24px 48px;
 }
 
@@ -142,12 +184,15 @@ header .container {
     line-height: 1;
 }
 
-.form-item label, .form-item input, .form-item textarea {
+.form-item label,
+.form-item input,
+.form-item textarea {
     display: block;
     width: 100%;
 }
 
-.form-item input, .form-item textarea {
+.form-item input,
+.form-item textarea {
     font-size: 24px;
     padding: 4px 0;
     border-bottom: solid 1.6px #4c4c4c;
@@ -166,20 +211,20 @@ header .container {
     border-radius: 0.4em;
 }
 
-/* 横並びフォーム */
-.inline-form {
-    display: flex;
-}
 
-.inline-form .form-item {
-    flex: 1;
+/* 横並びフォーム */
+
+.inline-form {
+    display: block;
 }
 
 input:autofill {
     transition: background-color 5000s ease-in-out 0s !important;
 }
 
+
 /* フッター */
+
 .page-top {
     font-weight: bold;
     padding: 8px;
@@ -204,94 +249,78 @@ footer {
     color: #797979;
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        padding-left: 24px;
-        padding-right: 24px;
+@media screen and (min-width: 768px) {
+    .section-container, .header-container {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
-    section {
-        padding: 48px 0;
+    .section {
+        padding: 80px 0;
     }
 
-    .title {
-        font-size: 24px;
-        margin-bottom: 20px;
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 40px;
     }
 
-    /* ヘッダー */
-    header .container {
-        padding-top: 16px;
-        padding-bottom: 16px;
+    .header-container {
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .header-logo {
-        font-size: 15px;
-        margin-right: 15px;
+        font-size: 24px;
     }
 
     .nav-item:not(:last-child) {
-        margin-right: 10px;
+        margin-right: 24px;
     }
 
     .nav-item a {
-        font-size: 10px;
-    }
-
-    .nav-item a:after {
-        display: none;
-    }
-
-    /* FirstView */
-    .fv-container {
-        padding: 0 20px;
+        font-size: 16px;
     }
 
     .fv-title {
-        font-size: 30px;
+        font-size: 56px;
     }
 
     .fv-subtitle {
-        font-size: 16px;
-        margin-bottom: 20px;
+        font-size: 24px;
+        margin-bottom: 16px;
     }
 
     .fv-text {
-        font-size: 14px;
-        line-height: 1.7;
+        font-size: 16px;
+    }
+
+    #works .card {
+        width: 32%;
+        margin-bottom: 40px;
+    }
+
+
+    #skill .card {
+        width: 48%;
+    }
+
+    #skill .card-img {
+        font-size: 4em;
+    }
+
+    #skill .card-title {
+        font-size: 20px;
+    }
+
+    #skill .card-body {
+        font-size: 16px;
     }
 
     .inline-form {
-        display: block;
+        display: flex;
     }
 
-    .form-item, .form-message {
-        padding: 12px;
-    }
-
-    .form-item label {
-        font-size: 16px;
-    }
-
-    .form-item input, .form-item textarea {
-        font-size: 18px;
-    }
-
-    /* Skill */
-
-    .skill-img {
-        font-size: 3.2em;
-    }
-
-    .skill-item {
-        width: 100%;
-    }
-
-    .skill-name {
-        font-size: 16px;
-    }
-
-    .skill-text {
-        font-size: 12px;
+    .form-item {
+        flex: 1;
     }
 }

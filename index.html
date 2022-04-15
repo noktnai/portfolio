@@ -27,135 +27,130 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
+    <header class="header">
+        <div class="header-container">
             <h1 class="header-logo">
                 <a href="">NAOKI TANI</a>
             </h1>
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#works">WORKS</a></li>
-                    <li class="nav-item"><a href="#skill">SKILL</a></li>
-                    <li class="nav-item"><a href="#about">ABOUT</a></li>
-                    <li class="nav-item"><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
+            <ul class="header-nav">
+                <li class="nav-item"><a href="#works">WORKS</a></li>
+                <li class="nav-item"><a href="#skill">SKILL</a></li>
+                <li class="nav-item"><a href="#about">ABOUT</a></li>
+                <li class="nav-item"><a href="#contact">CONTACT</a></li>
+            </ul>
         </div>
     </header>
     <main>
         <div class="fv">
-            <div>
+            <div class="fv-container">
                 <p class="fv-title">NAOKI TANI</p>
                 <p class="fv-subtitle">PORTFOLIO</p>
                 <p class="fv-text">谷 直輝のポートフォリオサイト</p>
             </div>
         </div>
-        <section id="works">
-            <div class="container">
-                <h2 class="title">WORKS</h2>
-                <div class="works-list">
-                    <a class="works-item" href="worksample1.html">
-                        <div class="works-img">
-                            <img src="img/work1.jpg" alt="作品1" />
+        <section id="works" class="section">
+            <div class="section-container">
+                <h2 class="section-title">WORKS</h2>
+                <div class="section-body">
+                    <div class="card">
+                        <img src="assets/img/work1.png" alt="作品1" class="card-img" />
+                        <div class="card-container">
+                            <h3 class="card-title">落とし物管理システム</h3>
+                            <div class="card-body">Design / Coding</div>
                         </div>
-                        <p class="works-name">落とし物管理システム</p>
-                        <p class="works-info">Coding(Responsive)</p>
-                    </a>
-                    <a class="works-item" href="worksample2.html">
-                        <div class="works-img">
-                            <img src="img/work2.jpg" alt="作品2" />
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/work2.png" alt="作品1" class="card-img" />
+                        <div class="card-container">
+                            <h3 class="card-title">Spotem（お店情報アプリ）</h3>
+                            <div class="card-body">Design / Coding</div>
                         </div>
-                        <p class="works-name">Spotem（お店情報アプリ）</p>
-                        <p class="works-info">
-                            Coding(Responsive)
-                        </p>
-                    </a>
-                    <a class="works-item" href="worksample3.html">
-                        <div class="works-img">
-                            <img src="img/work3.jpg" alt="作品3" />
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/work3.png" alt="作品1" class="card-img" />
+                        <div class="card-container">
+                            <h3 class="card-title">Apple Watch紹介サイト</h3>
+                            <div class="card-body">Design / Coding</div>
                         </div>
-                        <p class="works-name">Apple Watch紹介サイト</p>
-                        <p class="works-info">Design / Coding </p>
-                    </a>
-                    <a class="works-item" href="worksample4.html">
-                        <div class="works-img">
-                            <img src="img/work4.jpg" alt="作品4" />
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/work1.jpg" alt="作品1" class="card-img" />
+                        <div class="card-container">
+                            <h3 class="card-title">猫ランキングサイト</h3>
+                            <div class="card-body">Design / Coding</div>
                         </div>
-                        <p class="works-name">猫ランキング</p>
-                        <p class="works-info">Design / Coding</p>
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- skill -->
-        <section id="skill">
-            <div class="container">
-                <h2 class="title">SKILL</h2>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <i class="devicon-html5-plain-wordmark colored skill-img"></i>
-                        <div class="skill-body">
-                            <h3 class="skill-name">HTML5</h3>
-                            <p class="skill-text">
+        <section id="skill" class="section">
+            <div class="section-container">
+                <h2 class="section-title">SKILL</h2>
+                <div class="section-body">
+                    <div class="card">
+                        <i class="devicon-html5-plain-wordmark colored card-img"></i>
+                        <div class="card-container">
+                            <h3 class="card-title">HTML5</h3>
+                            <div class="card-body">
                                 基本的なコードの記述が可能です。SEO対策にも力を入れています。
-                            </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <i class="devicon-css3-plain-wordmark colored skill-img"></i>
-                        <div class="skill-body">
-                            <h3 class="skill-name">CSS3</h3>
-                            <p class="skill-text">
+                    <div class="card">
+                        <i class="devicon-css3-plain-wordmark colored card-img"></i>
+                        <div class="card-container">
+                            <h3 class="card-title">CSS3</h3>
+                            <div class="card-body">
                                 基本的なコードの記述が可能です。アニメーション, レスポンシブにも対応可。フレームワークにTailwindCSS, BootStrapを利用したことがあります。
-                            </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <i class="devicon-javascript-plain colored skill-img"></i>
-                        <div class="skill-body">
-                            <h3 class="skill-name">JavaScript</h3>
-                            <p class="skill-text">
+                    <div class="card">
+                        <i class="devicon-javascript-plain colored card-img"></i>
+                        <div class="card-container">
+                            <h3 class="card-title">JavaScript</h3>
+                            <div class="card-body">
                                 関数を使用したコードの記述、jQueryの利用が可能です。ajaxを使った非同期処理もできます。
-                            </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <i class="devicon-php-plain colored skill-img"></i>
-                        <div class="skill-body">
-                            <h3 class="skill-name">PHP</h3>
-                            <p class="skill-text">
+                    <div class="card">
+                        <i class="devicon-php-plain colored card-img"></i>
+                        <div class="card-container">
+                            <h3 class="card-title">PHP</h3>
+                            <div class="card-body">
                                 基本的なコードの記述、データベースとの接続が可能です。
-                            </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <i class="devicon-java-plain-wordmark colored skill-img"></i>
-                        <div class="skill-body">
-                            <h3 class="skill-name">Java</h3>
-                            <p class="skill-text">
+                    <div class="card">
+                        <i class="devicon-java-plain-wordmark colored card-img"></i>
+                        <div class="card-container">
+                            <h3 class="card-title">Java</h3>
+                            <div class="card-body">
                                 基本的なコードの記述ができます。サーバーサイド（JSP）についても学習しました。
-                            </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <i class="devicon-mysql-plain-wordmark colored skill-img"></i>
-                        <div class="skill-body">
-                            <h3 class="skill-name">MySQL</h3>
-                            <p class="skill-text">
+                    <div class="card">
+                        <i class="devicon-mysql-plain-wordmark colored card-img"></i>
+                        <div class="card-container">
+                            <h3 class="card-title">MySQL</h3>
+                            <div class="card-body">
                                 データベース、テーブル等の作成ができます。PostgreSQL, SQLiteも利用します。
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="about">
-            <div class="container">
-                <h2 class="title">ABOUT</h2>
-                <div class="profile">
+        <section id="about" class="section">
+            <div class="section-container">
+                <h2 class="section-title">ABOUT</h2>
+                <div class="section-body">
                     <p class="profile-img">
-                        <img src="img/profile.jpg" alt="プロフィール画像" />
+                        <img src="assets/img/naokitani.png" alt="プロフィール画像" />
                     </p>
                     <div class="profile-body">
                         <h3>谷 直輝</h3>
@@ -171,9 +166,9 @@
                 </div>
             </div>
         </section>
-        <section id="contact">
-            <div class="container">
-                <h2 class="title">CONTACT</h2>
+        <section id="contact" class="section">
+            <div class="section-container">
+                <h2 class="section-title">CONTACT</h2>
                 <p id="message" class="form-message">&nbsp;</p>
                 <div class="inline-form">
                     <div class="form-item">
