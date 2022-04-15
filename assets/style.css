@@ -114,7 +114,7 @@
 
 #works .card {
     width: 48%;
-    padding: 24px;
+    padding: 8px;
 }
 
 #works .card-img {
@@ -125,6 +125,7 @@
 
 #works .card-img:hover {
     cursor: pointer;
+    transform: scale(1.1);
     box-shadow: 0px 0px 8px 0px rgb(155, 130, 85);
 }
 
@@ -133,7 +134,7 @@
 }
 
 #works .card-title {
-    font-size: 16px
+    font-size: 14px
 }
 
 #works .card-body {
@@ -164,11 +165,22 @@
 }
 
 #skill .card-title {
-    font-size: 16px
+    font-size: 14px
 }
 
 #skill .card-body {
     font-size: 12px;
+}
+
+#about .card {
+    text-align: center;
+}
+
+#about .card-img {
+    border-radius: 50%;
+    border: solid #797979;
+    width: 32%;
+    max-width: 192px;
 }
 
 /* Contact */
@@ -299,6 +311,13 @@ footer {
         margin-bottom: 40px;
     }
 
+    #works .card-title {
+        font-size: 16px;
+    }
+
+    #works .card-body {
+        font-size: 14px;
+    }
 
     #skill .card {
         width: 48%;
@@ -309,11 +328,11 @@ footer {
     }
 
     #skill .card-title {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     #skill .card-body {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .inline-form {
