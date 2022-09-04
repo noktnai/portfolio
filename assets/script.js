@@ -1,28 +1,44 @@
 $(function () {
     $("input[type=submit]").click(function () {
-        let name = $("input[name=name]").val();
-        let mail = $("[name=mail]").val();
-        let body = $("textarea[name=body]").val();
-        if (name.match(/\S/g) && mail.match(/\S/g) && body.match(/\S/g)) {
-            $.ajax({
-                type: "POST",
-                url: "assets/contact/mail.php",
-                data: { name: name, mail: mail, body: body }
-            }).done(function (response) {
-                let result = JSON.parse(response);
-                if (result) {
-                    $("#message").text('ご連絡ありがとうございます。メールを受け付けました');
-                } else {
-                    $("#message").text('もう一度お試し下さい');
+        var name = $("input[name=name]").val();
+        var email = $("[name=email]").val();
+        var message = $("textarea[name=message]").val();
+        if (name.match(/\S/g) && email.match(/\S/g) && message.match(/\S/g)) {
+            // FormSpreeを利用した送信処理
+            var data = new FormData();
+            data.append("name", name);
+            data.append("email", email);
+            data.append("message", message);
+            fetch("https://formspree.io/f/xnqrjjjn", {
+                method: "POST",
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
                 }
-            }).fail(function () {
-                $("#message").text('申し訳ございません、もう一度お試し下さい');
+            }).then(response => {
+                if (response.ok) {
+                    $("#status").text('ご連絡ありがとうございます。確認次第ご返信させていただきます。');
+                } else {
+                    $("#status").text('申し訳ございません、送信に問題が発生しました。');
+                    /*
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            var errorMessage = data["errors"].map(error => error["message"]).join(", ");
+                            $("#status").text(errorMessage);
+                        } else {
+                            何らかのエラー
+                        }
+                    })
+                    */
+                }
+            }).catch(error => {
+                $("#status").text('申し訳ございません、送信に問題が発生しました。');
             });
         } else {
-            $("#message").text('全ての項目を入力してください');
+            $("#status").text('全ての項目を入力してください');
         }
     });
-    //ページ内スクロール
+    // ページ内スクロール
     var navHeight = $("header").outerHeight();
 
     $('a[href^="#"]').on("click", function () {
@@ -33,7 +49,7 @@ $(function () {
         return false;
     });
 
-    //ページトップ
+    // ページトップ
     $(".js_top").on("click", function () {
         $("body,html").animate({ scrollTop: 0, }, 300);
         return false;
